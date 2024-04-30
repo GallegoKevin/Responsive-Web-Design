@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+
+    background: linear-gradient(
+        90deg,
+        rgba(107, 90, 139, 1) 25%,
+        rgba(178, 157, 219, 1) 73%
+        );
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back {
+    padding: 32px 0;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+
+ 
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+.logo{
+    font-size: 24px;
+    color: #f2faff;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.menu .navbar ul li{
+        position: relative;
+        float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    
+    filter: invert(1500%) sepia(100%) saturate(100%) hue-rotate(29deg) brightness(120%) contrast(150%);
+    
+}
+
+.navbar-icon{
+    width: 16px;
+    margin-right: 4px;
+}
+
+
+
+#menu{
+    display: none;
+}
+
+.menu-icon {
+    width: 30px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/*TABLET*/
+@media(max-width:767px) {
+    
+    .menu{
+        padding: 9.7px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .back {
+        padding:  30px 0;
+       
+ 
+    }
+        
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            180deg,
+            rgb(135, 175, 226),
+            rgb(158, 128, 223) 
+            );
+        display: none;
+    
+
+    }
+ 
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a:hover {
+    
+        filter: invert(50%) sepia(100%) saturate(100%) hue-rotate(29deg) brightness(110%) contrast(200%);
+        
+        
+        
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+        
+    }
+
+
+}
+
+/*Mobile*/
+@media(max-width:500px) {
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            180deg,
+            rgb(91, 236, 193),
+            rgb(9, 199, 167) 
+            );
+        display: none;
+    
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a:hover {
+    
+        filter: invert(30%) sepia(98%) saturate(293%) hue-rotate(241deg) brightness(65%) contrast(200%);
+    }
+}
