@@ -360,6 +360,7 @@ body{
 
 /*Mobile*/
 @media(max-width:500px) {
+  
       .Main-title{
         font-size: 20px;
       }
@@ -424,16 +425,16 @@ body{
   }
 
 
-  @media(max-width:320px) {
+  @media(max-width:360px) {
 
     .Article-image{
-      margin-left: 0%;
-      width: 280px;
+      margin-left: 10%;
+      width: 200px;
     }
 
     .Quest-img{
-      width: 200px;
-      margin-left: 15%;
+      width: 150px;
+      margin-left: 25%;
     }
 
     .Mediaqueries, .Breakpoints{
@@ -441,7 +442,7 @@ body{
       margin: 0;
     }
     .Mediaqueries-content, .Breakpoints-content{
-    width: 300px;
+    width: 250px;
     margin-bottom: 10px;
     margin-top: 3px;
   }
@@ -451,6 +452,7 @@ body{
 }
   }
 
+ 
   @media(max-width:280px) {
     .Quest-img {
       width: 160px;
