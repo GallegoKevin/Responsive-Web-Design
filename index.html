@@ -8,27 +8,81 @@
 </head>
 <body>
     <header>
-        <div class="back">
-            <div class="menu container">
-                <a href="" class=" logo"><img src="./img/logo.png" class="logo-img"> DESIGN INFO</a>
-                <input type="checkbox" id="menu">
-                <label for="menu">
-                    <img src="./img/menu.png" class="menu-icon" alt="">
+        <div class="Back">
+            <div class="Menu Container">
+                <a href="" class=" Logo"><img src="./img/logo.png" class="Logo-img"> DESIGN INFO</a>
+                <input type="checkbox" id="Menu">
+                <label for="Menu">
+                    <img src="./img/menu.png" class="Menu-icon" alt="">
                 </label>
-                <nav class="navbar">
+                <nav class="Navbar">
                     <ul>
-                        <li><a href="#"><img src="./img/inicio.png" class="navbar-icon">Inicio</a></li>
-                        <li><a href="#"><img src="./img/principios.png" class="navbar-icon">Principios </a></li>
-                        <li><a href="#"><img src="./img/ventajas.png" class="navbar-icon">Ventajas</a></li>
-                        <li><a href="#"><img src="./img/ayuda.png" class="navbar-icon">Ayuda</a></li>
+                        <li><a href="./index.html" class="Navbar-icon--active"><img src="./img/inicio.png" class="Navbar-icon " >Inicio</a></li>
+                        <li><a href="#"><img src="./img/principios.png" class="Navbar-icon">Principios </a></li>
+                        <li><a href="#"><img src="./img/ventajas.png" class="Navbar-icon">Ventajas</a></li>
+                        <li><a href="#"><img src="./img/info.png" class="Navbar-icon">Info</a></li>
+                        <li><a href="#"><img src="./img/ayuda.png" class="Navbar-icon">Ayuda</a></li>
                     </ul>
 
                 </nav>
             </div>
         </div>
     </header>
-    <main>
+    <main class="Main">
+        <h1 class="Main-title">RESPONSIVE WEB DESIGN</h1>
         
-    </main>
+        <div class="Quest">
+            <h2 class="Quest-title">PREGUNTA Y RESPUESTA</h2>
+        <details class="Quest-details">
+          <summary class="Quest-summary">1. ¿Qué es responsive web design?</summary>
+          <p class="Quest-answer">El diseño web responsivo (responsive web design) es la práctica de crear sitios web que se adapten y se vean bien en una variedad de dispositivos y tamaños de pantalla. </p>
+            <img src="./img/Responsive-web.jpg" class="Quest-img">
+        </details>
+        <details class="Quest-details">
+            <summary class="Quest-summary">2. ¿Qué es la Zona Segura (space save)?</summary>
+            <p class="Quest-answer">Es el área de la pantalla de un dispositivo donde el contenido principal se muestra sin necesidad de desplazamientos, adaptándose automáticamente al tamaño y resolución del dispositivo para garantizar una experiencia visual óptima.</p>
+            <img src="./img/Zona-Segura.jpg" class="Quest-img">
+          </details>
+        </div>
+
+        <section class="Section">
+          <h2 class="Section-title">ENFOQUES</h2>
+          <article class="Article">
+            <h3 class="Article-title">MOBILE-FIRST :</h3>
+            <p class="Article-content">Se basa en empezar a diseñar primero por la versión móvil de un sitio web y luego  ir adaptandolo en dispositivos de mayor tamaño.</p>
+            <img class="Article-image" src="./img/mobile-first.jpg" alt="Mobile First">
+          </article>
+          <article class="Article">
+            <h3 class="Article-title">DESKTOP-FIRST :</h3>
+            <p class="Article-content">Se basa en empezar a diseñar primero la versión para computadoras de escritorio y luego adaptarla a dispositivos móviles.</p>
+            <img class="Article-image" src="./img/desktop-first.jpg" alt="Desktop First">
+          </article>
+        </section>
+        
+        <section class="Section">
+          <h2 class="Section-title">MEDIA QUERIES</h2>
+          <div class="Mediaqueries">
+          <p class="Mediaqueries-content">
+          Nos permite especificar la visualización de una pagina web para diferentes medios de salida y tamaños de pantalla como; desktop, tablet, android y apple.<br>
+          <br>
+          **El media querie para un enfoque desktop-first; consiste en "max-width".
+          Por ejemplo: @media (max-width: 767px){} <br><br>
+
+          **El media querie para un enfoque mobile-first; consiste en "min-width".
+          Por ejemplo: @media (min-width: 480px){}
+            </p>
+            <img class="Mediaqueries-image" src="./img/media-queries.png" alt="Media Queries">
+          </div>
+        </section>
+        
+        <section class="Section">
+          <h2 class="Section-title">BREAKPOINTS</h2>
+          <div class="Breakpoints">
+            <img class="Breakpoints-image" src="./img/breakpoints.jpg" alt="Breakpoints">
+            <p class="Breakpoints-content">Los breakpoints son puntos de quiebre en el diseño responsivo donde se aplican cambios en el diseño para adaptarse a diferentes tamaños de pantalla.</p>
+          
+          </div>
+        </section>
+      </main>
 </body>
 </html>

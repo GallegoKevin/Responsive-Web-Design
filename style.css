@@ -1,4 +1,6 @@
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,19 +18,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+/*HEADER*/
+.Container {
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.back {
+.Back {
     padding: 32px 0;
     background: linear-gradient(to right, #ff5f6d, #ffc371);
 
  
 }
 
-.menu{
+.Menu{
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +43,7 @@ body{
     
 }
 
-.logo{
+.Logo{
     font-size: 24px;
     color: #f2faff;
     font-weight: 800;
@@ -51,104 +54,336 @@ body{
     
 }
 
-.logo-img{
+.Logo-img{
     width: 40px;
     margin-right: 10px;
+    
 }
 
-.menu .navbar ul li{
+.Menu .Navbar ul li{
         position: relative;
         float: left;
+        
 }
 
-.menu .navbar ul li a {
+.Menu .Navbar ul li a {
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
     color: #fff;
     display: block;
 }
 
-.menu .navbar ul li a:hover {
-    
+.Menu .Navbar ul li a:hover {
     filter: invert(1500%) sepia(100%) saturate(100%) hue-rotate(29deg) brightness(120%) contrast(150%);
     
 }
 
-.navbar-icon{
+
+
+.Navbar-icon{
     width: 16px;
     margin-right: 4px;
 }
 
+.Navbar-icon--active{
+    filter: invert(1500%) sepia(100%) saturate(100%) hue-rotate(29deg) brightness(120%) contrast(150%);
+}
 
-
-#menu{
+#Menu{
     display: none;
 }
 
-.menu-icon {
+.Menu-icon {
     width: 30px;
 }
 
-.menu label{
+.Menu label{
     cursor: pointer;
     display: none;
 }
 
+
+/* Main */
+.Main {
+    padding: 0px;
+   max-width: 1100px;
+    margin: 0 auto;
+   
+
+  }
+  
+  .Main-title {
+    padding: 10px;
+    font-size: 34px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: purple;
+    text-align: center;
+    background-color: rgb(226, 226, 186);
+    border: 2px solid white;
+    border-radius: 10px;
+
+  }
+  
+  
+  /* Estilos para el acordeón */
+
+  .Quest{
+    background: linear-gradient(to right, #c9ecb1, #887965);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 10px 0 ;
+  }
+  .Quest-title{
+    text-align: start;
+    color: rgb(5, 65, 88);
+    padding-left:20px ;
+    
+    margin-top: 10px;
+  }
+  .Quest-details {
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #704cf3, #6c317a);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+
+
+  }
+  
+  .Quest-summary {
+    cursor: pointer;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  
+  .Quest-answer {
+    margin-top: 10px;
+    margin-left: 35px;
+    color: #ffffff;
+    line-height: 20px;
+
+  }
+
+  .Quest-img{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 35%;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+
+ 
+  
+  /* Estilos para las secciones */
+  .Section {
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #ddeeb7, #96e4bd, #cbddff);
+    border-radius: 8px;
+   
+    padding-bottom: 0PX;
+    margin: 10px 0 10px 0;
+    padding: 0px 0 2px 0 ;
+    
+  }
+  
+  .Section-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 0, 21);
+    padding: 10px;
+    border-radius: 10px;
+
+  }
+  
+  /* Estilos para los artículos */
+  .Article {
+    margin: 20px
+  }
+  
+  .Article-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(99, 0, 21);
+    text-decoration: underline;
+    font-weight: 900;
+    
+ 
+  }
+  
+  .Article-content {
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 530;
+    text-align: ce;
+  }
+  
+  .Article-image {
+    width: 300px;
+    height: 110px;
+    margin-left: 35%;
+    
+    border-radius: 8px;
+    border: 4px solid rgb(189, 91, 91);
+    
+    
+    
+  }
+  
+  /* Estilos para los divs de media queries y breakpoints */
+  .Mediaqueries,
+  .Breakpoints {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .Mediaqueries-content,
+  .Breakpoints-content {
+    color: #000000;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+  .Mediaqueries-image {
+    margin-left: 20px;
+    width: 500px;
+    height: 200px;
+    border: 4px solid rgb(239, 255, 169);
+    border-radius: 8px;
+  }
+  
+  .Breakpoints-image {
+    margin-right: 20px;
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    border: 4px solid rgb(237, 255, 133);
+  }
+
+
+
 /*TABLET*/
+
 @media(max-width:767px) {
     
-    .menu{
+    .Menu{
         padding: 9.7px;
     }
-    .menu label {
+    .Menu label {
         display: initial;
     }
-    .back {
+    .Back {
         padding:  30px 0;
        
  
     }
         
-    .menu .navbar {
+    .Menu .Navbar {
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background: linear-gradient(
             180deg,
-            rgb(135, 175, 226),
-            rgb(158, 128, 223) 
+            rgb(168, 189, 214),
+            rgb(7, 2, 20) 
             );
         display: none;
     
 
     }
- 
+    
+    .Navbar-icon--active {
+        filter: invert(50%) sepia(100%) saturate(100%) hue-rotate(29deg) brightness(110%) contrast(200%);
+    }
+  
 
-    .menu .navbar ul li {
+    .Menu .Navbar ul li {
         width: 100%;
     }
 
-    .menu .navbar ul li a:hover {
+    .Menu .Navbar ul li a:hover {
     
         filter: invert(50%) sepia(100%) saturate(100%) hue-rotate(29deg) brightness(110%) contrast(200%);
+
         
         
         
     }
 
-    #menu:checked ~ .navbar{
+    #Menu:checked ~ .Navbar{
         display: initial;
         
     }
 
+    .Quest-img{
 
-}
+        margin-left: 25%;
+ 
+      }
+
+      .Mediaqueries-content,
+      .Breakpoints-content {
+
+        width: 600px;
+        
+      }
+
+      
+      .Mediaqueries-image{
+
+        width: 200px;
+        height: auto;
+        border: 2px solid skyblue;
+      }
+
+      .Breakpoints-image {
+        margin-right: 20px;
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+        border: 4px solid rgb(237, 255, 133);
+      }
+
+      .Article-image{
+        margin-left: 30%;
+      }
+
+
+    }
 
 /*Mobile*/
 @media(max-width:500px) {
+      .Main-title{
+        font-size: 20px;
+      }
 
-    .menu .navbar {
+      .Quest-title{
+        font-size: 18px;
+      }
+
+      .Section-title{
+        font-size: 18px;
+      }
+
+     .Article-image{
+       margin-left: 20%;
+     }
+
+     .Article-content{
+      font-size: 15px;
+     }
+
+    .Article-title{
+      font-size: 16px;
+    }
+    .Menu .Navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -162,12 +397,56 @@ body{
     
     }
 
-    .menu .navbar ul li {
+    .Mediaqueries-content, .Breakpoints-content{
+      font-size: 13px;
+    }
+
+    .Breakpoints-image{
+
+      width: 200px;
+      height: 100px;
+    }
+
+    .Menu .Navbar ul li {
         width: 100%;
     }
 
-    .menu .navbar ul li a:hover {
+    .Menu .Navbar ul li a:hover {
     
         filter: invert(30%) sepia(98%) saturate(293%) hue-rotate(241deg) brightness(65%) contrast(200%);
     }
+
+
+    .Navbar-icon--active{
+    filter: invert(30%) sepia(98%) saturate(293%) hue-rotate(241deg) brightness(65%) contrast(200%);
+    }
+
+  }
+
+
+  @media(max-width:320px) {
+
+    .Article-image{
+      margin-left: 0%;
+      width: 280px;
+    }
+
+    .Quest-img{
+      width: 200px;
+      margin-left: 15%;
+    }
+
+    .Mediaqueries, .Breakpoints{
+      flex-direction: column;
+      margin: 0;
+    }
+    .Mediaqueries-content, .Breakpoints-content{
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+
+.Section-title{
+  margin:0;
 }
+  }
