@@ -450,3 +450,23 @@ body{
   margin:0;
 }
   }
+
+  @media(max-width:280px) {
+    .Quest-img {
+      width: 160px;
+      margin-left: 15%;
+  }
+  
+  .Article-image {
+    margin-left: 0%;
+    width: 200px;
+    height: 80px;
+}
+
+.Mediaqueries-content, .Breakpoints-content {
+  width: 260px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+  }

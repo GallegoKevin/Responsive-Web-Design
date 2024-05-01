@@ -27,8 +27,7 @@ Son valores específicos de ancho de pantalla en responsive design que se utiliz
 
 
 ## <h2 style="color: white; background-color:darkblue ;">Diseño web responsive con menú hamburguesa</h2> 
-
-
+	
 ### <h3 style="color: white">[DESKTOP (max-width:1100px)]</h3> 
 
  ![App Screenshot](https://i.ibb.co/ZzbPSFV/WEBSITE-DESKTOP.png)
